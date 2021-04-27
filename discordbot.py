@@ -33,6 +33,7 @@ async def on_message(message):
     if message.content == '退室':
         await leave_reply(message)
 
+
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
