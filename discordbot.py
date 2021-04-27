@@ -24,10 +24,5 @@ async def enter(ctx):
 async def leave(ctx):
     reply = f'{ctx.author.mention}が退室しました。'
     await ctx.send(reply)
-    
-@bot.command()
-async def help(ctx):
-    reply = f'入室コマンド：/enter\n退室コマンド：/leave'
-    await ctx.send(reply)
 
 bot.run(token)
