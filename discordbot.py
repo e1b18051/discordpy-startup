@@ -30,5 +30,14 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
+@bot.command()
+async def enter(ctx):
+    reply = f'{message.author.mention}が入室しました。'
+    await ctx.send('reply')
+
+@bot.command()
+async def leave(ctx):
+    reply = f'{message.author.mention}が退室しました。'
+    await ctx.send('reply')
 
 bot.run(token)
