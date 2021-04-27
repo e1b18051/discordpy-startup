@@ -26,7 +26,7 @@ async def leave(ctx):
     await ctx.send(reply)
     
 @bot.command()
-async def /help(ctx):
+async def help(ctx):
     reply = f'入室コマンド：/enter\n退室コマンド：/leave'
     await ctx.send(reply)
 
